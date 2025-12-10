@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddEtudiant">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Nom -->
+        <TextView
+            android:text="Nom :"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/text" />
+
+        <EditText
+            android:id="@+id/nom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/input"
+            android:inputType="textPersonName" />
+
+        <!-- Prénom -->
+        <TextView
+            android:text="Prénom :"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/text" />
+
+        <EditText
+            android:id="@+id/prenom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/input"
+            android:inputType="textPersonName" />
+
+        <!-- Ville -->
+        <TextView
+            android:text="Ville :"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/text" />
+
+        <Spinner
+            android:id="@+id/ville"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/villes"
+            style="@style/input" />
+
+        <!-- Sexe -->
+        <TextView
+            android:text="Sexe :"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/text" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/m"
+                android:text="Homme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RadioButton
+                android:id="@+id/f"
+                android:text="Femme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RadioGroup>
+
+        <!-- Bouton Ajouter -->
+        <Button
+            android:id="@+id/add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ajouter" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
